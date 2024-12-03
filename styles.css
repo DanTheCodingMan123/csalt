@@ -351,14 +351,65 @@ html {
     margin: 5px 0; 
 }
 
+
+
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar img {
+        height: 50px;
+    }
+
+    .navbar .navbar-title {
+        font-size: 1.8rem;
+    }
+
+    .navbar .navbar-subtext {
+        font-size: 0.7rem;
+    }
+
     .team-member {
-        flex: 1 1 calc(50% - 20px); 
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .team-member img {
+        max-width: 120px;
     }
 }
 
 @media (max-width: 480px) {
     .team-member {
-        flex: 1 1 100%; 
+        flex: 1 1 100%;
+    }
+
+    .team-member img {
+        max-width: 100px;
+    }
+
+    .team-member h3 {
+        font-size: 1rem;
+    }
+
+    .team-member p {
+        font-size: 0.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .team-container {
+        padding: 15px;
     }
 }
