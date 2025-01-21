@@ -66,13 +66,13 @@ html {
 }
 
 .header {
-    position: fixed; /* Fix the header at the top */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: white; /* Background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
-    transition: top 0.7s ease; /* Smoothly slide the header */
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: top 0.7s ease; 
 }
 
 .navbar img {
@@ -126,15 +126,15 @@ html {
 }
 .welcome-section {
     position: relative;
-    background-image: url('images/buoy.jpg'); /* Path to your image */
-    background-size: cover; /* Ensures the image covers the section */
-    background-position: center -130px; /* Moves the image up */
+    background-image: url('images/buoy.jpg'); 
+    background-size: cover; 
+    background-position: center -130px; 
     background-repeat: no-repeat;
-    height: 100vh; /* Full-screen height */
+    height: 100vh; 
     display: flex;
-    align-items: center; /* Centers content vertically */
-    padding: 0 50px; /* Adds horizontal padding */
-    color: white; /* Makes text white */
+    align-items: center;
+    padding: 0 50px;
+    color: white; 
     overflow: hidden;
 }
 
@@ -144,29 +144,29 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
 .welcome-section .content {
     position: relative;
-    z-index: 2; /* Places the text above the overlay */
-    max-width: 40%; /* Restricts the width of the text */
-    text-align: center; /* Aligns text to the left */
-    margin-left: 50px; /* Moves the text to the left side */
+    z-index: 2; 
+    max-width: 40%; 
+    text-align: center; 
+    margin-left: 50px; 
 }
 
 .welcome-section .section-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.874); /* Text color specific to the welcome section */
+    color: rgba(255, 255, 255, 0.874); 
 }
 
 .welcome-section p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.874); /* Text color specific to the welcome section */
+    color: rgba(255, 255, 255, 0.874); 
 }
 .welcome-section h2 {
     margin-top: 0px; 
@@ -184,23 +184,30 @@ html {
 
 
 .initiatives-section {
-    background-color:#2c3d50; /* Match the maroon background color */
-    color: white; /* Ensure text is readable */
+    background-color:#2c3d50; 
+    color: white;
     padding: 40px 20px;
 }
 
 .initiatives-container {
     display: flex;
-    align-items: center; /* Vertically aligns the content */
-    justify-content: space-between; /* Creates space between header and text */
-    max-width: 1200px; /* Limits the width of the section */
-    margin: 0 auto; /* Centers the section horizontally */
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.poopy-butt {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .initiatives-header {
-    flex: 1; /* Takes up 1/2 of the space */
+    flex: 1; 
     text-align: left;
-    padding-right: 20px; /* Adds spacing between the header and text */
+    padding-right: 20px; 
 }
 
 .initiatives-header .section-title {
@@ -210,8 +217,15 @@ html {
 }
 
 .initiatives-text {
-    flex: 1; /* Takes up 2/3 of the space */
+    flex: 1; 
     text-align: center;
+}
+.fart-text {
+    flex: 1; 
+    text-align: center;
+    margin-left: 30px;
+    padding-bottom: 25px;
+    
 }
 
 .initiatives-text p {
@@ -219,6 +233,8 @@ html {
     line-height: 1.6;
     margin: 0;
 }
+
+
 
 .unique-initiatives .initiatives-text p{
     color:#ffffffd7;
@@ -235,19 +251,29 @@ html {
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0);
     margin: 0px 0; 
 }
+
 .initiatives-section .section-title,
 .subteams-section .section-title {
-    color: var(--primary-color); /* Restore the original title color */
+    color: var(--primary-color); 
     font-size: 2.5rem;
     font-weight: bold;
 }
 
 .initiatives-section p,
 .subteams-section p {
-    color: var(--text-primary); /* Restore paragraph text color */
+    color: var(--primary-color); 
+
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+.initiatives-section p1,
+.subteams-section p1 {
+    color: #ffffffd7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 
 
 .welcome-section,
@@ -271,6 +297,15 @@ html {
 
 
 .initiatives-container,
+.subteams-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+.poopy-butt,
 .subteams-container {
     display: flex;
     justify-content: center;
@@ -333,6 +368,13 @@ html {
     flex-wrap: wrap;
     padding-top: 20px;  
 }
+.poopy-butt {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 80px;  
+}
 
 .initiative {
     flex: 1;  
@@ -374,7 +416,7 @@ html {
   
 
   
-  .team-container .group img {
+.group img {
     width: 50%; 
     border-radius: 10px;
   }
@@ -383,10 +425,10 @@ html {
 
 .team-container {
     background-color: var(--white);
-    padding: 20px;  
+    padding: 0px;  
     border-radius: 10px;  
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);  
-    margin: 20px auto; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.0);  
+    margin: 10px auto; 
 
     text-align: center;
 }
@@ -445,3 +487,97 @@ html {
 }
 
 
+.our-team-section {
+    position: relative;
+    background-image: url('team/team-photo.JPG');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-end;
+    padding: 40px; 
+    color: #ffffffda;
+    overflow: hidden;
+    margin-top: 120px;
+}
+
+.our-team-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.our-team-section .content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px; 
+    text-align: center; 
+}
+
+.our-team-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: -370px;
+}
+.centered-team .content {
+    max-width: 2000px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.centered-team .content h2 {
+    position: relative; 
+    margin-bottom: 0; 
+}
+
+.centered-team .content p {
+    position: absolute; 
+    top: 250px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 900px;
+    width: 1400%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffffda;
+
+}
+
+.centered-team .content poo {
+    position: absolute; 
+    top: 150px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 1200px;
+    width: 1400%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffffda;
+
+}
+
+.centered-team {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; 
+}
+
+
+.leadership-container {
+    margin-top: 0; 
+    padding-top: 0;
+}
+
+.leadership-container .section-title {
+    margin-top: 0; 
+}
