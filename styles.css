@@ -138,6 +138,21 @@ html {
     overflow: hidden;
 }
 
+.chicken {
+    display: flex;              
+  align-items: center;       
+  justify-content: center;    
+  height: 100vh;              
+  padding: 0 50px;
+  position: relative;
+  background-image: url('images/calmwave.jpg');
+  background-size: cover;
+  background-position: center -130px;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
 .welcome-section .overlay {
     position: absolute;
     top: 0;
@@ -156,6 +171,15 @@ html {
     margin-left: 50px; 
 }
 
+
+.welcome-section .about-content {
+    position: relative;
+    z-index: 2; 
+    max-width: 90%; 
+    text-align: center; 
+    top: -100px;
+}
+
 .welcome-section .section-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -169,7 +193,7 @@ html {
     color: rgba(255, 255, 255, 0.874); 
 }
 .welcome-section h2 {
-    margin-top: 0px; 
+    margin-top: 100px; 
     margin-bottom: 0px;
 }
 
@@ -335,32 +359,8 @@ html {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
 
-    .navbar nav {
-        margin-top: 15px;
-        flex-direction: column;
-    }
 
-    .navbar a {
-        margin: 10px 0;
-    }
-
-    .initiatives-container,
-    .subteams-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .initiative,
-    .subteam {
-        width: 90%;
-    }
-}
 .initiatives-container {
     display: flex;
     justify-content: space-around;
@@ -581,3 +581,319 @@ html {
 .leadership-container .section-title {
     margin-top: 0; 
 }
+
+
+.apply-section {
+    background-color: #fff;
+    color: #2C3E50;
+    padding: 80px 20px;      /* Top/bottom, left/right padding */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .apply-section .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .apply-section .section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+  }
+  
+  .apply-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .apply-section h3 {
+    margin-top: 30px;
+    font-size: 1.4rem;
+  }
+
+  .apply-section .timeline-container {
+    margin: 40px auto; /* Space above/below the timeline */
+    text-align: center; /* Center the image horizontally */
+  }
+  
+  .apply-section .timeline-container img {
+    max-width: 100%;          /* Ensure it scales for mobile */
+    height: auto;             /* Maintain aspect ratio */
+    border: 2px solid #2C3E50; /* Optional border */
+    border-radius: 8px;       /* Slightly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+/* =========================================================
+   ============     MEDIA QUERIES FOR MOBILE     ============
+   ========================================================= */
+
+/* ----- Tablet and Down (max-width: 768px) ----- */
+@media screen and (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        height: auto; /* Let the nav expand for all items */
+    }
+
+    /* Remove absolute positioning for the title/subtext to prevent overlap */
+    .navbar .navbar-title,
+    .navbar .navbar-subtext {
+        position: static;
+        transform: none;
+        margin: 0;
+    }
+
+    .navbar .navbar-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .navbar .navbar-subtext {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .navbar img {
+        height: 50px; /* Reduce logo size */
+        margin-bottom: 10px;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between links */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Adjust font size for links */
+    }
+
+    /* MAIN CONTENT / BODY */
+    .main-content {
+        padding-top: 180px; 
+        /* Slightly larger top-padding so content doesn't hide behind nav. 
+           Adjust as needed if it still overlaps. */
+    }
+
+    /* WELCOME SECTION */
+    .welcome-section {
+        height: auto; /* Let content drive the height */
+        padding: 20px;
+        background-position: center; 
+    }
+
+    .welcome-section .content {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 90%; /* Keep the text narrower than full screen */
+    }
+
+    .welcome-section .content p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    /* GENERAL SECTION / TEAM MEMBERS */
+    .section,
+    .main-content {
+        padding: 20px 10px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .team-member img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .team-member h3 {
+        font-size: 1rem;
+    }
+
+    /* SUBTEAMS */
+    .subteams-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subteam {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* INITIATIVES */
+    .initiatives-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .initiatives-header,
+    .initiatives-text {
+        text-align: center;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    /* CONTACT */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+}
+
+/* ----- Small Phones (max-width: 480px) ----- */
+@media screen and (max-width: 480px) {
+    .navbar .navbar-title {
+        font-size: 1.4rem;
+    }
+
+    .navbar .navbar-subtext {
+        font-size: 0.9rem;
+    }
+
+    .welcome-section .content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .team-member img {
+        max-width: 120px;
+    }
+
+    .main-content {
+        padding-top: 200px; 
+        /* Increase if the nav still overlaps. */
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    /* Let the .navbar naturally size itself instead of being fixed-height. */
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      height: auto; /* No fixed height */
+      padding: 10px;
+      position: fixed;  /* Still fixed, but auto-height now */
+      top: 0;
+      width: 100%;
+    }
+  
+    /* Remove absolute positioning for the title & subtext */
+    .navbar .navbar-title {
+      position: static;
+      transform: none;
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .navbar .navbar-subtext {
+      position: static;
+      transform: none;
+      margin-top: 5px;
+      font-size: 1rem;
+    }
+  
+    /* The nav links stack under the title and subtext */
+    .navbar nav {
+      margin-top: 10px; 
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    /* Make sure the main content is pushed down below the now variable-height navbar */
+    .main-content {
+      margin-top: 90px !important; /* Enough space so it’s fully visible */
+    }
+  }
+
+  
+
+  @media (max-width: 768px) {
+  /* Ensure the parent section is position: relative for z-index to work */
+  .our-team-section.centered-team {
+    position: relative !important; 
+    height: auto !important;   /* No forced 100vh on mobile */
+    margin-top: 300px !important; /* Enough room below the fixed header */
+    display: block;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  /* Keep the overlay behind the text */
+  .our-team-section.centered-team .overlay {
+    z-index: 1 !important;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+
+  /* Make the .content position relative, above z-index:1 */
+  .our-team-section.centered-team .content {
+    position: relative !important; 
+    z-index: 2 !important;    
+    margin: 0 auto;
+    max-width: 90%;  
+    text-align: center;
+    transform: none; 
+    top: auto; 
+    left: auto;
+  }
+
+  /* Remove absolute offsets so text wraps normally */
+  .centered-team .content h2,
+  .centered-team .content p,
+  .centered-team .content h3 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: auto;
+    max-width: 100%; 
+    margin: 0 auto 1rem; 
+    overflow-wrap: break-word;
+  }
+
+  /* Adjust if you want smaller text/line-height on mobile: */
+  .centered-team .content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ffffff; 
+  }
+}
+@media (max-width: 768px) {
+    .apply-section {
+      margin-top: 350px !important; /* or more/less as needed */
+    }
+  }
