@@ -178,6 +178,8 @@ html {
     max-width: 90%; 
     text-align: center; 
     top: -100px;
+    margin-left: 0px; 
+
 }
 
 .welcome-section .section-title {
