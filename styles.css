@@ -876,3 +876,52 @@ html {
       margin-top: 350px !important;
     }
   }
+
+/* Recruitment Image Section */
+.recruitment-image-section {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.recruitment-image-section .section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 40px;
+}
+
+.recruitment-image-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.recruitment-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .recruitment-image-section {
+        padding: 60px 20px;
+    }
+    
+    .recruitment-image-section .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recruitment-image-section {
+        padding: 50px 15px;
+    }
+    
+    .recruitment-image-section .section-title {
+        font-size: 1.8rem;
+    }
+}
