@@ -3,134 +3,415 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSalt - Innovating Sustainable Water Solutions</title>
+    <title>CSalt Cornell - Innovating Sustainable Water Solutions</title>
+    <meta
+      name="description"
+      content="A student-led initiative at Cornell University developing sustainable desalination systems powered by ocean wave energy. Join us in advancing eco-friendly water solutions."
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/csalt-logo.png" />
   </head>
-
   <body>
-    <header class="navbar header">
-      <a href="index.html">
-        <img src="images/csalt-logo.png" alt="CSalt Logo" />
-      </a>
-      <a href="index.html" class="navbar-title">CSalt</a>
-      <span class="navbar-subtext">Innovating Sustainable Water Solutions</span>
-      <nav>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Our Team</a>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <img
+              src="images/csalt-logo.png"
+              alt="CSalt Logo"
+              class="logo-img"
+            />
+            <div class="logo-text">
+              <span class="logo-title">CSalt</span>
+              <span class="logo-subtitle">Cornell University</span>
+            </div>
+          </a>
 
-        <a href="apply.html">Apply</a>
-        <a href="#contactSection">Contact Us</a>
-      </nav>
+          <nav class="nav">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="apply.html" class="nav-link">Apply</a>
+            <a href="#footer" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <div class="main-content">
-      <section class="section">
-        <section class="section welcome-section">
-          <div class="overlay"></div>
-          <div class="content">
-              <h2 class="section-title">Welcome to CSalt</h2>
-              <p>
-                  CSalt is a student-led initiative at Cornell University, focused on
-                  advancing eco-friendly desalination systems powered by ocean wave
-                  energy. By combining engineering innovation with environmental
-                  responsibility, we aim to develop sustainable solutions for global
-                  water challenges. Our team, working closely with Professor Maha Haji
-                  and her research group, is designing a wave-powered desalination
-                  system to compete in the U.S. Department of Energy’s Marine Energy
-                  Collegiate Competition. Join us as we explore the future of wave
-                  energy and green technology.
-              </p>
-          </div>
-      </section>
-
-      <section class="section initiatives-section unique-initiatives">
-        <div class="initiatives-container">
-            <div class="initiatives-header">
-                <h2 class="section-title">Our Initiatives</h2>
-            </div>
-            <div class="initiatives-text">
-                <p>
-                    Our initiatives focus on sustainability, innovation, and education. We develop eco-friendly desalination systems, advance water accessibility through cutting-edge technology, and empower communities with knowledge about sustainable water solutions.
-                </p>
-            </div>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-background">
+          <div
+            class="hero-image"
+            style="background-image: url('images/websitehomepage.jpeg')"
+          ></div>
+          <div class="hero-overlay"></div>
         </div>
-    </section>
-        <!-- Subteams Section -->
-        <section class="subteams-section">
-          <h2 class="section-title">Our Subteams</h2>
-          <div class="subteams-container">
-            <div class="subteam">
-              <h3>Membrane</h3>
-              <p>
-                The Membrane Subteam is dedicated to developing and optimizing advanced filtration membranes for desalination systems. By researching innovative materials and techniques, the team ensures efficient, sustainable, and cost-effective water purification, supporting the overall mission of delivering clean water solutions.
 
-
-
-
-
-
-
-              </p>
-            </div>
-            <div class="subteam">
-              <h3>Mechanical</h3>
-              <p>
-                The Mechanical Subteam focuses on designing and building the physical components of the desalination system. From wave energy harnessing mechanisms to structural frameworks, this team ensures the system operates efficiently and reliably under real-world conditions.
-
-              </p>
-            </div>
-            <div class="subteam">
-              <h3>Business</h3>
-              <p>
-                The Business Subteam manages project funding, sponsorships, and outreach efforts. They develop strategies to secure resources, maintain partnerships, and communicate the team's vision to stakeholders, ensuring the project's long-term success.
-
-              </p>
-            </div>
-            <div class="subteam">
-              <h3>Community Connections</h3>
-              <p>
-                The Community Connections Subteam bridges the gap between the project and the public. They focus on education, outreach, and collaboration with communities to raise awareness about sustainable water solutions and foster a positive impact beyond the lab.
-
-
-
-
-
-
-
-              </p>
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Innovating <span class="highlight">Sustainable</span> Water
+              Solutions
+            </h1>
+            <p class="hero-description">
+              A student-led initiative at Cornell University developing
+              eco-friendly desalination systems powered by ocean wave energy
+            </p>
+            <div class="hero-buttons">
+              <a href="apply.html" class="btn btn-primary">Join the Team</a>
+              <a href="about.html" class="btn btn-secondary">Learn More</a>
             </div>
           </div>
-        </section>
+        </div>
       </section>
 
-     <!-- Contact Section -->
-     <section class="contact">
-      <div><strong>Contact Us<strong></div>
-      <div>
-        Follow Us:
-        <a
-          href="https://www.instagram.com/cornellcsalt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
-          >Instagram</a
-        >
-        |
-        <a href="https://www.linkedin.com/company/csaltcornell/">LinkedIn</a>
+      <!-- Subteams Section -->
+      <section class="subteams-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Our Subteams</h2>
+            <p class="section-description">
+              Four specialized teams working together to advance sustainable
+              water technology
+            </p>
+          </div>
+
+          <div class="subteams-content">
+            <div class="subteams-text">
+              <div class="subteam-item slide-in-left">
+                <div class="subteam-content">
+                  <div class="subteam-icon">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <path d="M2 17l10 5 10-5"></path>
+                      <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                  </div>
+                  <div class="subteam-text">
+                    <h3 class="subteam-title">Membrane</h3>
+                    <p class="subteam-description">
+                      The Membrane Subteam is dedicated to developing and
+                      optimizing advanced filtration membranes for desalination
+                      systems. By researching innovative materials and
+                      techniques, the team ensures efficient, sustainable, and
+                      cost-effective water purification.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subteam-item slide-in-left">
+                <div class="subteam-content">
+                  <div class="subteam-icon">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        x="2"
+                        y="3"
+                        width="20"
+                        height="14"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                  <div class="subteam-text">
+                    <h3 class="subteam-title">Mechanical</h3>
+                    <p class="subteam-description">
+                      The Mechanical Subteam focuses on designing and building
+                      the physical components of the desalination system. From
+                      wave energy harnessing mechanisms to structural
+                      frameworks, this team ensures the system operates
+                      efficiently and reliably.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subteam-item slide-in-left">
+                <div class="subteam-content">
+                  <div class="subteam-icon">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="12" y1="1" x2="12" y2="23"></line>
+                      <path
+                        d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="subteam-text">
+                    <h3 class="subteam-title">Business</h3>
+                    <p class="subteam-description">
+                      The Business Subteam manages project funding,
+                      sponsorships, and outreach efforts. They develop
+                      strategies to secure resources, maintain partnerships, and
+                      communicate the team's vision to stakeholders.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subteam-item slide-in-left">
+                <div class="subteam-content">
+                  <div class="subteam-icon">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <div class="subteam-text">
+                    <h3 class="subteam-title">Community Connections</h3>
+                    <p class="subteam-description">
+                      The Community Connections Subteam bridges the gap between
+                      the project and the public. They focus on education,
+                      outreach, and collaboration with communities to raise
+                      awareness about sustainable water solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="subteams-visual">
+              <div class="wave-animation">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metrics Section -->
+      <section class="metrics">
+        <div class="metrics-background">
+          <div
+            class="metrics-image"
+            style="background-image: url('images/fatwave.jpg')"
+          ></div>
+          <div class="metrics-overlay"></div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">By the Numbers</h2>
+            <p class="section-description">
+              Our impact and achievements in sustainable water technology
+            </p>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="metric-number">26</h3>
+              <p class="metric-description">
+                Diverse team across 5 Cornell colleges
+              </p>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline
+                    points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"
+                  ></polyline>
+                </svg>
+              </div>
+              <h3 class="metric-number">MECC</h3>
+              <p class="metric-description">
+                Marine Energy Collegiate Competition participant
+              </p>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <h3 class="metric-number">2024</h3>
+              <p class="metric-description">
+                Newest sustainable technology initiative
+              </p>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10,8 16,12 10,16 10,8"></polygon>
+                </svg>
+              </div>
+              <h3 class="metric-number">100%</h3>
+              <p class="metric-description">Wave-powered desalination system</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="images/csalt-logo.png"
+                alt="CSalt Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-title">CSalt</span>
+            </div>
+            <p class="footer-description">
+              A student-led initiative at Cornell University developing
+              sustainable desalination systems powered by ocean wave energy.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Contact</h4>
+            <p class="footer-contact">csaltcornell@gmail.com</p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/cornellcsalt"
+                target="_blank"
+                class="social-link"
+                >Instagram</a
+              >
+              <a
+                href="https://www.linkedin.com/company/csaltcornell/"
+                target="_blank"
+                class="social-link"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-main-text">
+            2025 CSalt | Innovating Sustainable Water Solutions | Made with ♡ by
+            the CSalt team
+          </p>
+          <p class="ezra-quote">
+            In 1868, Ezra Cornell wrote, "I would found an institution where any
+            person can find instruction in any study." More than 150 years
+            later, the "... any person ... any study" principle continues to
+            guide the university community. Cornell welcomes students, faculty,
+            and staff with diverse backgrounds from across the globe to pursue
+            world-class education and career opportunities.
+          </p>
+        </div>
       </div>
-      <div>Learn More: <a href="about.html">Our Mission</a></div>
-      <div>Get Involved: <a href="apply.html">Applications</a></div>
-      <div>For further inquiries email us at csaltcornell@gmail.com</div>
-
-    </section>
-
-    <footer class="footer" id="contactSection">
-      <p>
-        2025 CSalt | Innovating Sustainable Water Solutions | Made with ♡
-        by the CSalt team
-      </p>
-      <p style="margin-top: 20px; font-size: 0.7rem; opacity: 0.7; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">
-        In 1868, Ezra Cornell wrote, "I would found an institution where any person can find instruction in any study." More than 150 years later, the "... any person ... any study" principle continues to guide the university community. Cornell welcomes students, faculty, and staff with diverse backgrounds from across the globe to pursue world-class education and career opportunities.
-      </p>
     </footer>
-    <script src="scripts.js"></script>
 
+    <script src="scripts.js"></script>
   </body>
 </html>

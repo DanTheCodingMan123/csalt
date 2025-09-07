@@ -3,126 +3,339 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - CSalt</title>
+    <title>About Us - CSalt Cornell</title>
+    <meta
+      name="description"
+      content="Learn about CSalt's mission to develop sustainable desalination systems powered by ocean wave energy. Founded in 2024 at Cornell University."
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/csalt-logo.png" />
   </head>
   <body>
-    <header class="navbar header">
-      <a href="index.html">
-        <img src="images/csalt-logo.png" alt="CSalt Logo" />
-      </a>
-      <a href="index.html" class="navbar-title">CSalt</a>
-      <span class="navbar-subtext">Innovating Sustainable Water Solutions</span>
-      <nav>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Our Team</a>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <img
+              src="images/csalt-logo.png"
+              alt="CSalt Logo"
+              class="logo-img"
+            />
+            <div class="logo-text">
+              <span class="logo-title">CSalt</span>
+              <span class="logo-subtitle">Cornell University</span>
+            </div>
+          </a>
 
-        <a href="apply.html">Apply</a>
-        <a href="#contactSection">Contact Us</a>
-      </nav>
+          <nav class="nav">
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="apply.html" class="nav-link">Apply</a>
+            <a href="#footer" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <div class="main-content">
-      <section class="section">
-        <section class="section welcome-section chicken">
-          <div class="overlay"></div>
-          <div class="content about-content">
-              <h2 class="section-title">About Us</h2>
+    <!-- Main Content -->
+    <main>
+      <!-- About Hero Section -->
+      <section class="hero about-hero">
+        <div class="hero-background">
+          <div
+            class="hero-image about-hero-image"
+            style="background-image: url('images/calmwave.jpg')"
+          ></div>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">About Us</h1>
+            <div class="about-text">
               <p>
-                Founded in Fall 2024, CSalt is a registered student organization at Cornell University, working under the guidance of Professor Maha Haji, and her Ph.D. students in the Sibley School of Mechanical and Aerospace Engineering. Our team is developing a wave-powered desalination system, with plans to compete in the U.S. Department of Energy’s Marine Energy Collegiate Competition (MECC) held every May in Portland, Oregon.
-
+                Founded in Fall 2024, CSalt is a registered student organization
+                at Cornell University, working under the guidance of Associate
+                Professor Lenan Zhang in the Sibley School of Mechanical and
+                Aerospace Engineering. Our team is developing a wave-powered
+                desalination system, with plans to compete in the U.S.
+                Department of Energy's Marine Energy Collegiate Competition
+                (MECC) held every May in Portland, Oregon.
               </p>
-          </div>
-      </section>
-
-   
-      <section class="section initiatives-section unique-initiatives">
-        <div class="initiatives-container">
-            <div class="initiatives-header">
-                <h2 class="section-title">What is the MECC?                </h2>
             </div>
-            <div class="initiatives-text">
-              
-                <p>
-                  The MECC is hosted by the U.S. Department of Energy every May in Portland, OR.
-                  The competition is split into four required contests: <br>
-                  <br>
-                   <strong>1. Business Plan Challenge</strong> <br>Identify a promising market within the blue economy and determine, within that market, the best marine energy application to address. <br>
-                   <strong>2. Technical Design Challenge</strong> <br>Evaluate the performance requirements in our chosen blue economy market by identifying and interviewing at least three potential end users. Complete a detailed design of a marine-energy-powered device to serve those end users. <br>
-                   <strong>3. Build & Test Challenge</strong> <br>Build a scaled prototype of our concept and perform a series of lab tests. <br>
-                   <strong>4. Community Connections Challenge</strong> <br>Foster connections with the broader marine energy industry and the local community. <br>
-                
-                </p>
-            </div>
-    
-
-        </div>
-        <div class="fart-text">
-
-          <p1>We look forward to participating! For more information on the competition, please follow this  <a
-            href="https://americanmadechallenges.org/challenges/marine-energy-collegiate-competition" style="color: #ffffffd7"
-            >link</a
-          >.</p1>
-          </div>
-    </section>
-
-
-      <section class="subteams-section">
-        <h2 class="section-title">Our Values</h2>
-        <div class="subteams-container">
-          <div class="subteam">
-            <h3>Sustainability</h3>
-            <p>
-              We believe clean water should be accessible to all, yet pollution and costly extraction often create barriers. Our student-led team is developing a wave-powered desalination system to make water extraction more sustainable and affordable.
-
-            </p>
-          </div>
-          <div class="subteam">
-            <h3>Innovation</h3>
-            <p>
-              We embrace creative problem-solving and cutting-edge technology to design a scalable solution for global water scarcity, constantly seeking new ways to improve and challenge conventional methods.
-            </p>
-          </div>
-          <div class="subteam">
-            <h3>Community</h3>
-            <p>
-              We aim to educate the Cornell and Ithaca communities about sustainability and water access challenges, empowering individuals to make a positive impact through outreach and collaboration.
-
-            </p>
           </div>
         </div>
       </section>
-    </section>
-    </div>
 
-    <!-- Contact Section -->
-    <section class="contact">
-      <div><strong>Contact Us<strong></div>
-      <div>
-        Follow Us:
-        <a
-          href="https://www.instagram.com/cornellcsalt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          >Instagram</a
-        >
-        |
-        <a href="https://www.linkedin.com/company/csaltcornell/">LinkedIn</a>
+      <!-- Mission Section -->
+      <section class="mission-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-description"></p>
+          </div>
+
+          <div class="mission-content">
+            <div class="mission-text">
+              <p>
+                Founded in Fall 2024, CSalt is a registered student organization
+                at Cornell University, working under the guidance of Associate
+                Professor Lenan Zhang in the Sibley School of Mechanical and
+                Aerospace Engineering. Our team is developing a wave-powered
+                desalination system, with plans to compete in the U.S.
+                Department of Energy's Marine Energy Collegiate Competition
+                (MECC) held every May in Portland, Oregon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values Section -->
+      <section class="core-values-section">
+        <div class="container">
+          <div class="values-content">
+            <div class="values-text">
+              <h2 class="section-title">Our Core Values</h2>
+              <p class="section-description">
+                The principles that drive our mission to solve global water
+                challenges and keep us beating with passion and purpose
+              </p>
+              <div class="values-list">
+                <div class="value-item">
+                  <h3>Sustainability</h3>
+                  <p>
+                    We believe clean water should be accessible to all, yet
+                    pollution and costly extraction often create barriers. Our
+                    student-led team is developing a wave-powered desalination
+                    system to make water extraction more sustainable and
+                    affordable.
+                  </p>
+                </div>
+                <div class="value-item">
+                  <h3>Innovation</h3>
+                  <p>
+                    We embrace creative problem-solving and cutting-edge
+                    technology to design a scalable solution for global water
+                    scarcity, constantly seeking new ways to improve and
+                    challenge conventional methods.
+                  </p>
+                </div>
+                <div class="value-item">
+                  <h3>Community</h3>
+                  <p>
+                    We aim to educate the Cornell and Ithaca communities about
+                    sustainability and water access challenges, empowering
+                    individuals to make a positive impact through outreach and
+                    collaboration.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="values-visual">
+              <div class="pulsing-circles">
+                <div class="pulse-circle pulse-1"></div>
+                <div class="pulse-circle pulse-2"></div>
+                <div class="pulse-circle pulse-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MECC Section -->
+      <section class="mecc-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Marine Energy Collegiate Competition</h2>
+            <p class="section-description">
+              CSalt is participating in the U.S. Department of Energy's Marine
+              Energy Collegiate Competition (MECC)
+            </p>
+          </div>
+
+          <div class="mecc-content">
+            <div class="mecc-features">
+              <div class="mecc-feature">
+                <div class="mecc-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div class="mecc-feature-text">
+                  <h3>National Competition</h3>
+                  <p>
+                    U.S. Department of Energy's premier marine energy
+                    competition
+                  </p>
+                </div>
+              </div>
+
+              <div class="mecc-feature">
+                <div class="mecc-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                  </svg>
+                </div>
+                <div class="mecc-feature-text">
+                  <h3>Real-World Impact</h3>
+                  <p>
+                    Developing solutions for global water accessibility
+                    challenges
+                  </p>
+                </div>
+              </div>
+
+              <div class="mecc-feature">
+                <div class="mecc-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div class="mecc-feature-text">
+                  <h3>Innovation Focus</h3>
+                  <p>
+                    Wave-powered desalination system harnessing ocean energy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mecc-text">
+              <p>
+                The Marine Energy Collegiate Competition (MECC) is a national
+                competition that challenges student teams to develop marine
+                energy solutions. Our team is designing a wave-powered
+                desalination system that harnesses ocean wave energy to produce
+                clean, fresh water.
+              </p>
+              <p>
+                This competition provides us with the opportunity to work on
+                real-world challenges while developing innovative solutions that
+                could have a significant impact on global water accessibility.
+              </p>
+              <p>
+                Click on this
+                <a
+                  href="https://www.herox.com/marine-energy-collegiate-competition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+                to learn more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="images/csalt-logo.png"
+                alt="CSalt Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-title">CSalt</span>
+            </div>
+            <p class="footer-description">
+              A student-led initiative at Cornell University developing
+              sustainable desalination systems powered by ocean wave energy.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Contact</h4>
+            <p class="footer-contact">csaltcornell@gmail.com</p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/cornellcsalt"
+                target="_blank"
+                class="social-link"
+                >Instagram</a
+              >
+              <a
+                href="https://www.linkedin.com/company/csaltcornell/"
+                target="_blank"
+                class="social-link"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-main-text">
+            2025 CSalt | Innovating Sustainable Water Solutions | Made with ♡ by
+            the CSalt team
+          </p>
+          <p class="ezra-quote">
+            In 1868, Ezra Cornell wrote, "I would found an institution where any
+            person can find instruction in any study." More than 150 years
+            later, the "... any person ... any study" principle continues to
+            guide the university community. Cornell welcomes students, faculty,
+            and staff with diverse backgrounds from across the globe to pursue
+            world-class education and career opportunities.
+          </p>
+        </div>
       </div>
-      <div>Learn More: <a href="about.html">Our Mission</a></div>
-      <div>Get Involved: <a href="apply.html">Applications</a></div>
-      <div>For further inquiries email us at csaltcornell@gmail.com</div>
+    </footer>
 
-    </section>
-
-      <footer class="footer" id="contactSection">
-    <p>
-      2025 CSalt | Innovating Sustainable Water Solutions | Made with ♡
-      by the CSalt team
-    </p>
-    <p style="margin-top: 20px; font-size: 0.7rem; opacity: 0.7; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">
-      In 1868, Ezra Cornell wrote, "I would found an institution where any person can find instruction in any study." More than 150 years later, the "... any person ... any study" principle continues to guide the university community. Cornell welcomes students, faculty, and staff with diverse backgrounds from across the globe to pursue world-class education and career opportunities.
-    </p>
-  </footer>
     <script src="scripts.js"></script>
-
   </body>
 </html>

@@ -3,90 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Team - CSalt</title>
+    <title>Apply - CSalt Cornell</title>
+    <meta
+      name="description"
+      content="Join CSalt - A student-led initiative at Cornell University developing sustainable desalination systems powered by ocean wave energy."
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/csalt-logo.png" />
   </head>
   <body>
-  
-    <header class="navbar header">
-      <a href="index.html">
-        <img src="images/csalt-logo.png" alt="CSalt Logo" />
-      </a>
-      <a href="index.html" class="navbar-title">CSalt</a>
-      <span class="navbar-subtext">Innovating Sustainable Water Solutions</span>
-      <nav>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Our Team</a>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <img
+              src="images/csalt-logo.png"
+              alt="CSalt Logo"
+              class="logo-img"
+            />
+            <div class="logo-text">
+              <span class="logo-title">CSalt</span>
+              <span class="logo-subtitle">Cornell University</span>
+            </div>
+          </a>
 
-        <a href="apply.html">Apply</a>
-        <a href="#contactSection">Contact Us</a>
-      </nav>
-    </header>
+          <nav class="nav">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="apply.html" class="nav-link active">Apply</a>
+            <a href="#footer" class="nav-link">Contact</a>
+          </nav>
 
-
-    <section class="section apply-section">
-      <div class="content">
-        <h2 class="section-title">Join the Team</h2>
-          <!-- Fall Recruitment Image -->
-      <div class="content">
-        <div class="recruitment-image-container">
-          <img src="images/fall_recruitment.jpeg" alt="Fall Recruitment Schedule" />
+          <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-        <p>
-          
-          
-          Thank you for your interest in joining our team! We are always looking 
-          for new students to join us on our journey of exploring the future of 
-          wave energy and green technology.
-    
-          <br><br>
-          We seek students from a diverse range of academic disciplines, including 
-          (but not limited to) Engineering, Business, Marketing, Communications, 
-          Environmental and Public Policy, and Social Sciences. 
-<!--     
-        <h4>Application Timeline</h4>
-        <div class="timeline-container">
-          <img src="images/timeline.PNG" alt="Application Timeline" />
-        </div> -->
+    </header>
 
+    <!-- Main Content -->
+    <main>
+      <!-- Main Content Section -->
+      <section class="apply-content-section">
+        <div class="container">
+          <div class="content-wrapper">
+            <h1 class="hero-title">Join the Team</h1>
 
-          <br><br>
-          For any questions about our team or updates on our projects, please 
-          reach out to us at <strong>csaltcornell@gmail.com</strong>.
-        </p>
+            <div class="schedule-image">
+              <img
+                src="images/fall_recruitment.jpeg"
+                alt="Fall 2025 Recruitment Schedule"
+              />
+            </div>
+
+            <p class="main-text">
+              Thank you for your interest in joining our team! We are always
+              looking for new students to join us on our journey of exploring
+              the future of wave energy and green technology.
+            </p>
+
+            <p class="main-text">
+              We seek students from a diverse range of academic disciplines,
+              including (but not limited to) Engineering, Business, Marketing,
+              Communications, Environmental and Public Policy, and Social
+              Sciences.
+            </p>
+
+            <div class="apply-button-container">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf4GTMI02NYpY3ML6K9C-BBK_oqFh7GwVcp3qEtC5RnYE0QWg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="apply-button"
+              >
+                Apply Here
+              </a>
+            </div>
+
+            <p class="main-text">
+              For any questions about our team or updates on our projects,
+              please reach out to us at
+              <a href="mailto:csaltcornell@gmail.com">csaltcornell@gmail.com</a
+              >.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="images/csalt-logo.png"
+                alt="CSalt Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-title">CSalt</span>
+            </div>
+            <p class="footer-description">
+              A student-led initiative at Cornell University developing
+              sustainable desalination systems powered by ocean wave energy.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="apply.html">Apply</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-title">Connect</h3>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/csaltcornell"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                Instagram
+              </a>
+              <a
+                href="https://www.linkedin.com/company/csaltcornell"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-main-text">
+            2025 CSalt | Innovating Sustainable Water Solutions | Made with ♡ by
+            the CSalt team
+          </p>
+          <p class="ezra-quote">
+            In 1868, Ezra Cornell wrote, "I would found an institution where any
+            person can find instruction in any study." More than 150 years
+            later, the "... any person ... any study" principle continues to
+            guide the university community. Cornell welcomes students, faculty,
+            and staff with diverse backgrounds from across the globe to pursue
+            world-class education and career opportunities.
+          </p>
+        </div>
       </div>
-    </section>
+    </footer>
 
-
-    <!-- Contact Section -->
- <section class="contact">
-    <div><strong>Contact Us<strong></div>
-    <div>
-      Follow Us:
-      <a
-        href="https://www.instagram.com/cornellcsalt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-        >Instagram</a
-      >
-      |
-      <a href="https://www.linkedin.com/company/csaltcornell/">LinkedIn</a>
-    </div>
-    <div>Learn More: <a href="about.html">Our Mission</a></div>
-    <div>Get Involved: <a href="apply.html">Applications</a></div>
-    <div>For further inquiries email us at csaltcornell@gmail.com</div>
-
-  </section>
-
-  <footer class="footer" id="contactSection">
-    <p>
-      2025 CSalt | Innovating Sustainable Water Solutions | Made with ♡
-      by the CSalt team
-    </p>
-    <p style="margin-top: 20px; font-size: 0.7rem; opacity: 0.7; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">
-      In 1868, Ezra Cornell wrote, "I would found an institution where any person can find instruction in any study." More than 150 years later, the "... any person ... any study" principle continues to guide the university community. Cornell welcomes students, faculty, and staff with diverse backgrounds from across the globe to pursue world-class education and career opportunities.
-    </p>
-  </footer>
-  <script src="scripts.js"></script>
-
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
