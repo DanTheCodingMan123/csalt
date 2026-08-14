@@ -46,7 +46,7 @@ csalt/
 │   └── wave-background.svg
 └── team/               # Team member photos
     ├── leader/         # Leadership photos
-    ├── membrane/       # Membrane subteam photos
+    ├── matchem/        # Chemicals and Materials subteam photos
     ├── mechanical/     # Mechanical subteam photos
     ├── business/       # Business subteam photos
     └── community-connections/ # Community connections photos
@@ -73,7 +73,7 @@ csalt/
 
 - **Purpose**: Showcases the four subteams with descriptions and icons
 - **Key Elements**:
-  - Membrane subteam (filtration technology)
+  - Chemicals and Materials subteam (filtration technology)
   - Mechanical subteam (physical components)
   - Business subteam (funding and outreach)
   - Community Connections subteam (education and collaboration)
