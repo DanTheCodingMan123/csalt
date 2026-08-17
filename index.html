@@ -4,10 +4,10 @@
     <!-- Basic HTML document setup and metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSalt Cornell - Innovating Sustainable Water Solutions</title>
+    <title>CSalt - Innovating Marine Energy Solutions</title>
     <meta
       name="description"
-      content="A student-led project team at Cornell University developing sustainable desalination systems powered by ocean wave energy. Join us in advancing eco-friendly water solutions."
+      content="A student-led project team at Cornell University developing sustainable solutions systems powered by marine energy. "
     />
     <!-- External stylesheet and favicon -->
     <link rel="stylesheet" href="styles.css" />
@@ -26,16 +26,18 @@
               class="logo-img"
             />
             <div class="logo-text">
-              <span class="logo-title">CSalt Project Team</span>
-              <span class="logo-subtitle">at Cornell University</span>
+              <span class="logo-title">CSalt</span>
+              <span class="logo-subtitle">Project Team at Cornell University</span>
             </div>
           </a>
 
           <!-- Main navigation menu -->
           <nav class="nav">
             <a href="about.html" class="nav-link">About</a>
-            <a href="team.html" class="nav-link">Team</a>
+            <a href="team.html" class="nav-link">Our Team</a>
+            <a href="projects.html" class="nav-link">Projects</a>
             <a href="apply.html" class="nav-link">Apply</a>
+            <a href="donate.html" class="nav-link">Donate</a>
             <a href="#footer" class="nav-link">Contact</a>
           </nav>
 
@@ -66,13 +68,13 @@
         <div class="container">
           <div class="hero-content">
             <!-- Main headline with highlighted word -->
-            <h1 class="hero-title">
-              Innovating Sustainable Water Solutions
+            <h1 class="hero-title home-hero-title">
+              Innovating Marine Energy Solutions
             </h1>
             <!-- Descriptive subtitle -->
             <p class="hero-description">
-              A student-led initiative at Cornell University developing
-              eco-friendly desalination systems powered by ocean wave energy
+              A student-led project team at Cornell University developing
+              sustainable marine energy solutions
             </p>
             <!-- Call-to-action buttons -->
             <div class="hero-buttons">
@@ -90,8 +92,8 @@
           <div class="section-header">
             <h2 class="section-title">Our Subteams</h2>
             <p class="section-description">
-              Four specialized teams working together to advance sustainable
-              water technology
+              Four specialized teams working together to advance marine
+              energy technology
             </p>
           </div>
 
@@ -99,7 +101,7 @@
           <div class="subteams-content">
             <div class="subteams-text">
               <!-- CHEMICALS AND MATERIALS SUBTEAM: Filtration technology team -->
-              <div class="subteam-item slide-in-left">
+              <div class="subteam-item slide-in-left" data-group-photo="matchem">
                 <div class="subteam-content">
                   <!-- Icon representing membrane/filtration -->
                   <div class="subteam-icon">
@@ -122,18 +124,14 @@
                   <div class="subteam-text">
                     <h3 class="subteam-title">Chemicals and Materials</h3>
                     <p class="subteam-description">
-                      The Chemicals and Materials Subteam is dedicated to developing and
-                      optimizing advanced filtration membranes for desalination
-                      systems. By researching innovative materials and
-                      techniques, the team ensures efficient, sustainable, and
-                      cost-effective water purification.
+                      The Chemicals and Materials Subteam explores the materials, chemical processes, and technologies that enable CSalt’s systems. Through research and experimentation, the team develops and evaluates innovative materials and chemical solutions to improve the performance, efficiency, durability, and sustainability across a range of projects. 
                     </p>
                   </div>
                 </div>
               </div>
 
               <!-- MECHANICAL SUBTEAM: Physical components and engineering -->
-              <div class="subteam-item slide-in-left">
+              <div class="subteam-item slide-in-left" data-group-photo="mechanical">
                 <div class="subteam-content">
                   <div class="subteam-icon">
                     <svg
@@ -161,18 +159,15 @@
                   <div class="subteam-text">
                     <h3 class="subteam-title">Mechanical</h3>
                     <p class="subteam-description">
-                      The Mechanical Subteam focuses on designing and building
-                      the physical components of the desalination system. From
-                      wave energy harnessing mechanisms to structural
-                      frameworks, this team ensures the system operates
-                      efficiently and reliably.
+                      The Mechanical Subteam focuses on designing and building the physical components of our hydropower system. From wave energy harnessing mechanisms to structural frameworks, this team ensure the system operates efficiently and reliably
+
                     </p>
                   </div>
                 </div>
               </div>
 
               <!-- BUSINESS SUBTEAM: Funding, sponsorships, and outreach -->
-              <div class="subteam-item slide-in-left">
+              <div class="subteam-item slide-in-left" data-group-photo="business">
                 <div class="subteam-content">
                   <div class="subteam-icon">
                     <svg
@@ -204,7 +199,7 @@
               </div>
 
               <!-- COMMUNITY CONNECTIONS SUBTEAM: Education and public outreach -->
-              <div class="subteam-item slide-in-left">
+              <div class="subteam-item slide-in-left" data-group-photo="community">
                 <div class="subteam-content">
                   <div class="subteam-icon">
                     <svg
@@ -228,23 +223,56 @@
                   <div class="subteam-text">
                     <h3 class="subteam-title">Community Connections</h3>
                     <p class="subteam-description">
-                      The Community Connections Subteam bridges the gap between
-                      the project and the public. They focus on education,
-                      outreach, and collaboration with communities to raise
-                      awareness about sustainable water solutions.
+                      The Community Connections Subteam bridges the gap between the project and the public. They focus on education, outreach, and collaboration with communities to raise awareness about innovative hydropower solutions. 
+
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Visual animation element (animated waves) -->
-            <div class="subteams-visual">
-              <div class="wave-animation">
-                <div class="wave wave-1"></div>
-                <div class="wave wave-2"></div>
-                <div class="wave wave-3"></div>
+            <!-- Group photo shown for the subteam currently being hovered -->
+            <div class="subteams-visual" aria-live="polite">
+              <div class="subteam-idle-logo" aria-hidden="true">
+                <div class="subteam-logo-stage">
+                  <img
+                    class="subteam-logo-guide"
+                    src="images/csalt-logo.png"
+                    alt=""
+                  />
+                  <img
+                    class="subteam-logo-stroke"
+                    src="images/csalt-logo.png"
+                    alt=""
+                  />
+                  <span class="subteam-logo-draw-tip"></span>
+                </div>
+                
               </div>
+              <img
+                class="subteam-group-photo"
+                data-group-photo="matchem"
+                src="team/groupshots/matchemgroup.JPG"
+                alt="Chemicals and Materials subteam group"
+              />
+              <img
+                class="subteam-group-photo"
+                data-group-photo="mechanical"
+                src="team/groupshots/mechanicalgroup.JPG"
+                alt="Mechanical subteam group"
+              />
+              <img
+                class="subteam-group-photo"
+                data-group-photo="business"
+                src="team/groupshots/buisnessgroup.JPG"
+                alt="Business subteam group"
+              />
+              <img
+                class="subteam-group-photo"
+                data-group-photo="community"
+                src="team/groupshots/communitygroup.JPG"
+                alt="Community Connections subteam group"
+              />
             </div>
           </div>
         </div>
@@ -381,8 +409,8 @@
               <span class="footer-title">CSalt</span>
             </div>
             <p class="footer-description">
-              A student-led initiative at Cornell University developing
-              sustainable desalination systems powered by ocean wave energy.
+              A student-led project team at Cornell University developing
+              sustainable marine energy solutions.
             </p>
           </div>
 
@@ -391,7 +419,15 @@
             <ul class="footer-links">
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Our Team</a></li>
+              <li><a href="projects.html">Projects</a></li>
               <li><a href="apply.html">Apply</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li>
+                <a
+                  href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+                  >Equal Education &amp; Employment</a
+                >
+              </li>
             </ul>
           </div>
 
@@ -417,7 +453,7 @@
 
         <div class="footer-bottom">
           <p class="footer-main-text">
-            2025 CSalt | Innovating Sustainable Water Solutions | Made with ♡ by
+            2025 CSalt | Innovating Marine Energy Solutions | Made with ♡ by
             the CSalt team
           </p>
           <p class="footer-main-text">
