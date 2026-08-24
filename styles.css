@@ -2610,6 +2610,7 @@ button:focus-visible {
 .recruitment-intro { max-width: 800px; margin: 0 auto 3.25rem; color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.7; }
 .recruitment-hero h2 { margin-bottom: 1.25rem; font-size: 1.5rem; }
 .recruitment-actions { display: flex; align-items: stretch; justify-content: center; gap: 1.25rem; flex-wrap: wrap; }
+.recruitment-actions-coffee { margin-top: 1.25rem; }
 
 .recruitment-button {
     position: relative;
@@ -2692,6 +2693,7 @@ button:focus-visible {
 .recruitment-timeline.visible .recruitment-event:nth-child(4) { animation-delay: 0.65s; }
 .recruitment-timeline.visible .recruitment-event:nth-child(5) { animation-delay: 0.8s; }
 .recruitment-timeline.visible .recruitment-event:nth-child(6) { animation-delay: 0.95s; }
+.recruitment-timeline.visible .recruitment-event:nth-child(7) { animation-delay: 1.1s; }
 .recruitment-event h3 { margin-bottom: 0.35rem; color: #0b647a; font-size: 1.25rem; }
 .recruitment-event p { color: #486d76; font-size: 1rem; }
 .recruitment-deadline .recruitment-event-content { padding: 0.8rem 1rem; border-left: 2px dashed #2980b9; background: rgba(78, 186, 193, 0.12); }
